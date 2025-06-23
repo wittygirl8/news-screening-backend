@@ -17,4 +17,5 @@ bs4~=0.0.2
 spacy~=3.7.5
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 psycopg2==2.9.10
+python-Levenshtein==0.23.0
 uvicorn[standard]
