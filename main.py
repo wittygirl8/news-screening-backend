@@ -2,7 +2,12 @@ from fastapi import FastAPI
 # from .controllers import item_controller
 from controllers import item_controller
 from fastapi.middleware.cors import CORSMiddleware
-app = FastAPI()
+app = FastAPI(
+    title="News Screening Backend",
+    version="1.0.0",
+    docs_url="/",
+    root_path="/api/news"
+)
 # Configure CORS middleware to allow requests from the React app
 app.add_middleware(
     CORSMiddleware,
